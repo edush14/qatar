@@ -3,7 +3,7 @@
     'name': 'Reporte x Qatar',
     'category': 'uncategorize',
     'author': 'ITGRUPO',
-    'depends': ['base'],
+    'depends': ['sale_management'],
     'version': '1.0',
     'description':"""
      Reporte x Qatar
