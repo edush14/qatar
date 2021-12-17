@@ -10,7 +10,7 @@
                              t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
                     </div>
                     <div>
-                       <h4 class="mt-2" t-field="res_company.report_header"/>
+                       Your business in a good hands
                     </div>
 
                 </div>
