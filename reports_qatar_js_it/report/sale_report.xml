@@ -42,7 +42,7 @@
             <field name="margin_left">5</field>
             <field name="margin_right">5</field>
             <field name="header_line" eval="False"/>
-            <field name="header_spacing">25</field>
+            <field name="header_spacing">10</field>
             <field name="dpi">90</field>
             <field name="report_ids" eval="[(6,0,[ref('sale.action_report_saleorder'),ref('sale.action_report_pro_forma_invoice')])]"/>
 

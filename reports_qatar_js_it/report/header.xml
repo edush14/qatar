@@ -9,12 +9,12 @@
                         <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
                     </div>
                     <div>
-                       <h4 class="mt0" t-field="res_company.report_header"/>
+                       <h4 class="mt2" t-field="res_company.report_header"/>
                     </div>
 
                 </div>
-                <div class="col-6 text-right mb4">
-                    <div name="company_address" class="float-right mb4">
+                <div class="col-6 text-right ">
+                    <div name="company_address" class="float-right ">
                         <span t-if="res_company.company_details" t-field="res_company.company_details"/>
                     </div>
                 </div>
