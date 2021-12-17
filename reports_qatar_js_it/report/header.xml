@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <template id="header">
-        <div t-attf-class="o_company_#{doc.company.id}_layout" t-att-style="report_header_style">
+        <div t-attf-class="o_company_#{res_company.id}_layout" t-att-style="report_header_style">
             <div class="o_boxed_header">
             <div class="row mb8">
                 <div class="col-6">
