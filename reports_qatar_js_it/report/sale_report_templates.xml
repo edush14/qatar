@@ -15,7 +15,7 @@
         -->
 
 
-        <div class="row mt-4" >
+        <div class="row mt-1" >
 
             <div  class="col-6 text-left">
                <div t-field="doc.partner_id.name" />
@@ -75,7 +75,7 @@
         <div class="page">
             <div class="oe_structure"/>
 
-            <h2 class="mt16">
+            <h2 class="mt16 text-center">
                 <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">
                     <span t-if="doc.state not in ['draft','sent']">Order # </span>
                     <span t-if="doc.state in ['draft','sent']">Quotation # </span>
