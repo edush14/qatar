@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <template id="header">
-        <div t-attf-class=" o_company_#{company.id}_layout" t-att-style="report_header_style">
+        <div t-attf-class="o_company_#{doc.company.id}_layout" t-att-style="report_header_style">
             <div class="o_boxed_header">
             <div class="row mb8">
                 <div class="col-6">
-                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" alt="Logo"/>
+                    <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
                 </div>
                 <div class="col-6 text-right mb4">
-                    <h4 class="mt0" t-field="company.report_header"/>
+                    <h4 class="mt0" t-field="res_company.report_header"/>
                     <div name="company_address" class="float-right mb4">
-                        <span t-if="company.company_details" t-field="company.company_details"/>
+                        <span t-if="res_company.company_details" t-field="res_company.company_details"/>
                     </div>
                 </div>
             </div>
