@@ -5,10 +5,15 @@
             <div class="o_boxed_header">
             <div class="row mb8">
                 <div class="col-6">
-                    <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
+                    <div>
+                        <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
+                    </div>
+                    <div>
+                       <h4 class="mt0" t-field="res_company.report_header"/>
+                    </div>
+
                 </div>
                 <div class="col-6 text-right mb4">
-                    <h4 class="mt0" t-field="res_company.report_header"/>
                     <div name="company_address" class="float-right mb4">
                         <span t-if="res_company.company_details" t-field="res_company.company_details"/>
                     </div>
