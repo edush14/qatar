@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="header">
+        <div t-attf-class="o_company_#{res_company.id}_layout" t-att-style="report_header_style">
+            <div class="o_boxed_header">
+            <div class="row">
+                <div class="col-6">
+                    <div>
+                        <img t-if="res_company.logo"
+                             t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
+                    </div>
+                    <div>
+                       <h4 class="mt-2">Your business in a good hands</h4>
+                    </div>
+
+                </div>
+                <div class="col-6 text-right ">
+                    <div >
+                        <span t-if="res_company.partner_id.contact_address" t-field="res_company.partner_id.contact_address" /><div t-field="res_company.email"/>
+                        <div t-field="res_company.phone"/>
+                         <div t-field="res_company.website"/>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+  </template>
+
+
+  <template id="footer">
+      <div t-attf-class="footer o_boxed_footer o_company_#{res_company.id}_layout">
+            <div class="text-center">
+                <div>Licensed By The QFCA </div>
+                <div t-field="res_company.partner_id.contact_address"/>
+                <div>
+                    <span t-field="res_company.email" />
+                    <span t-field="res_company.phone" class="ml-2" />
+                    <span t-field="res_company.website" class="ml-2" />
+                </div>
+
+
+
+                <div t-if="report_type == 'pdf'">
+                    Page: <span class="page"/> / <span class="topage"/>
+                </div>
+            </div>
+      </div>
+
+  </template>
+
+</odoo>
