@@ -31,10 +31,16 @@
   <template id="footer">
       <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout">
             <div class="text-center">
+                <div>Licensed By The QFCA </div>
                 <div t-field="res_company.partner_id.contact_address"/>
-                <div t-field="res_company.email"/>
-                <div t-field="res_company.phone"/>
-                <div t-field="res_company.website"/>
+                <div>
+                    <span t-field="res_company.email" />
+                    <span t-field="res_company.phone" class="ml-2" />
+                    <span t-field="res_company.website" class="ml-2" />
+                </div>
+
+
+
                 <div t-if="report_type == 'pdf'">
                     Page: <span class="page"/> / <span class="topage"/>
                 </div>

@@ -4,6 +4,7 @@
     <t t-call="web.external_layout">
         <t t-set="doc" t-value="doc.with_context(lang=doc.partner_id.lang)" />
         <t t-call="reports_qatar_js_it.header" />
+        <t t-call="reports_qatar_js_it.footer" />
 
         <t t-set="forced_vat" t-value="doc.fiscal_position_id.foreign_vat"/> <!-- So that it appears in the footer of the report instead of the company VAT if it's set -->
         <!--
@@ -15,7 +16,7 @@
         -->
 
 
-        <div class="row mt-1" >
+        <div class="row mt-3" >
 
             <div  class="col-6 text-left">
                <div t-field="doc.partner_id.name" />
