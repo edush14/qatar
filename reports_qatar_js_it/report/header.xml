@@ -3,7 +3,7 @@
   <template id="header">
         <div t-attf-class="o_company_#{res_company.id}_layout" t-att-style="report_header_style">
             <div class="o_boxed_header">
-            <div class="row mb8">
+            <div class="row">
                 <div class="col-6">
                     <div>
                         <img t-if="res_company.logo" t-att-src="image_data_uri(res_company.logo)" alt="Logo"/>
