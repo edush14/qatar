@@ -29,7 +29,7 @@
 
 
   <template id="footer">
-      <div t-attf-class="footer o_boxed_footer o_company_#{company.id}_layout">
+      <div t-attf-class="footer o_boxed_footer o_company_#{res_company.id}_layout">
             <div class="text-center">
                 <div>Licensed By The QFCA </div>
                 <div t-field="res_company.partner_id.contact_address"/>
