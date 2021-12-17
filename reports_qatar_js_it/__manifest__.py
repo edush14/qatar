@@ -12,6 +12,7 @@
     'demo': [],
     'data': [
         #'security/security.xml',
+        'report/header.xml',
         'report/sale_report.xml',
         ],
     'installable': True
