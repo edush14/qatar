@@ -19,7 +19,7 @@
 
             <div  class="col-6 text-left">
                <div t-field="doc.partner_id.name" />
-               <p t-if="doc.partner_id.direccion_complete_it" t-field="doc.partner_id.address" />
+               <p t-if="doc.partner_id.address" t-field="doc.partner_id.address" />
                <p t-if="doc.partner_id.vat">
                 <t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/>
                </p>
